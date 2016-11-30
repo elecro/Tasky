@@ -152,7 +152,7 @@ LOGGING = {
 }
 
 
-LOGIN_REDIRECT_URL = "/task/list/"
+LOGIN_REDIRECT_URL = "/list/"
 
 
 import dj_database_url
