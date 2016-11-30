@@ -1,0 +1,7 @@
+<h1>Task #{{ task.id }} - {{ task.title }}</h1>
+<p>State: {{ task.state.name }}</p>
+<p>{{ task.description }}</a>
+<p>Created at {{ task.create_date }}</p>
+
+
+<p><a href="{% url 'tasker:list_tasks' %}">My Task list</a></p>

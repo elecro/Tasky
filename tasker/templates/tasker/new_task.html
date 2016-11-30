@@ -1,0 +1,7 @@
+<h1>New Task</h1>
+
+<form action="{% url 'tasker:new_task' %}" method="post">
+{% csrf_token %}
+{{ form_task.as_p }}
+<input type="submit" value="Add Task"/>
+</form>

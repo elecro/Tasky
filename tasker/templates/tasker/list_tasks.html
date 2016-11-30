@@ -1,0 +1,8 @@
+<h1>My Tasks</h1> <span><a href="{% url 'logout' %}">Logout</a></span>
+
+<p><a href="{% url 'tasker:new_task' %}">Add Task</a></p>
+<ul>
+{% for task in list_tasks %}
+  <li><a href="{% url 'tasker:view_task' task.id %}">{{ task.id }} - {{ task.title }}</a> - {{ task.state.name }} </li>
+{% endfor %}
+</ul>
